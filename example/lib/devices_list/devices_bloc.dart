@@ -10,7 +10,6 @@ import 'package:rxdart/rxdart.dart';
 
 class DevicesBloc {
   final List<BleDevice> bleDevices = <BleDevice>[];
-
   BehaviorSubject<List<BleDevice>> _visibleDevicesController = BehaviorSubject<List<BleDevice>>.seeded(<BleDevice>[]);
 
   StreamController<BleDevice> _devicePickerController = StreamController<BleDevice>();
